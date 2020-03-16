@@ -174,6 +174,8 @@
 
 ```git
   git branch
+  git branch -a   // 查看所有分支
+  git branch -r   // 查看远程分支
 ```
 
 ### 合并分支到master主分支
@@ -188,6 +190,15 @@
 
 ```git
   git merge --no-ff -m "merge with no-ff" <branch name>
+```
+
+### 在本地创建远程分支
+
+```git
+  // 先建立本地分支
+  git switch -c <branch name>
+  // 将新分支推送至GitHub.
+  git push origin <branch name>
 ```
 
 ### 删除分支
