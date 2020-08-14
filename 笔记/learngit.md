@@ -328,3 +328,13 @@
 > 想要删除远程的标签      
 > 1.先删除本地的 `git tag -d <tag name>  `      
 > 2.从远程删除 ` git push origin :refs/tags/<tag name>`
+
+## git push到GitHub的时候遇到! [rejected] master -> master (non-fast-forward)的问题
+
+1、git pull origin master --allow-unrelated-histories //把远程仓库和本地同步，消除差异  
+
+2、重新add和commit相应文件  
+
+3、git push origin master  
+
+4、此时就能够上传成功了  
